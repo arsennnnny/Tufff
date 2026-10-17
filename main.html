@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вступительный тест на Турнир Юных Физиков</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #0f172a;
+            color: #38bdf8;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border: 1px solid #0284c7;
+        }
+        h1 {
+            text-align: center;
+            color: #f1f5f9;
+            font-size: 24px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+        fieldset {
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #0f172a;
+        }
+        legend {
+            font-weight: bold;
+            color: #f43f5e;
+            padding: 0 10px;
+            font-size: 18px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #cbd5e1;
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            background-color: #1e293b;
+            border: 1px solid #475569;
+            border-radius: 6px;
+            color: #f1f5f9;
+            box-sizing: border-box;
+            font-family: inherit;
+        }
+        input[type="text"]:focus, textarea:focus, select:focus {
+            outline: none;
+            border-color: #38bdf8;
+            box-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+        }
+        .math-box {
+            background-color: #1e293b;
+            padding: 12px;
+            border-left: 4px solid #f43f5e;
+            font-family: "Times New Roman", Times, serif;
+            font-size: 18px;
+            color: #f8fafc;
+            margin: 10px 0;
+            overflow-x: auto;
+        }
+        .radio-group {
+            margin: 10px 0;
+        }
+        .radio-group label {
+            display: inline-block;
+            margin-right: 15px;
+            font-weight: normal;
+            cursor: pointer;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #0284c7;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background 0.3s;
+            text-transform: uppercase;
+        }
+        button:hover {
+            background-color: #0369a1;
+            box-shadow: 0 0 15px rgba(3, 105, 161, 0.7);
+        }
+        .footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #64748b;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Вступительная анкета на ТЮФ</h1>
+    <div class="subtitle">«Если вы не можете решить эти задачи, то как вы собираетесь объяснять жюри, почему ваш чайный пакетик левитирует?»</div>
+
+    <form action="#" method="POST" onsubmit="alert('Ваша заявка отправлена в параллельную вселенную. Если вы пройдете, мы свяжемся с вашим астральным телом.'); return false;">
+        
+        <!-- БЛОК 1: Личные данные -->
+        <fieldset>
+            <legend>Этап 1: Идентификация физического тела</legend>
+            
+            <div class="form-group">
+                <label for="name">ФИО полностью (как в паспорте или в зачетке у грозного профессора):</label>
+                <input type="text" id="name" name="name" required placeholder="Эйнштейн Альберт Германович">
+            </div>
+
+            <div class="form-group">
+                <label for="address">Место постоянной дислокации атомов (Грубо говоря — где живешь?):</label>
+                <input type="text" id="address" name="address" required placeholder="г. Минск, общежитие №3, комната со сломанным чайником">
+            </div>
+
+            <div class="form-group">
+                <label for="telegram">Юзернейм в Telegram (ЮЗ тг):</label>
+                <input type="text" id="telegram" name="telegram" required placeholder="@schrodinger_cat">
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required placeholder="quantum_physics_fan@vacuum.com">
+            </div>
+        </fieldset>
+
+        <!-- БЛОК 2: Хардкорная Высшая Математика -->
+        <fieldset>
+            <legend>Этап 2: Ментальная аннигиляция (Вышмат)</legend>
+
+            <div class="form-group">
+                <label>1. Вычислите неопределенный интеграл, которые изичные</label>
+                <div class="math-box">
+                    &int; e<sup>-x<sup>2</sup></sup> dx + &int; (sin(x) / x) dx
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="q1_1" name="q1" value="1">
+                    <label for="q1_1">Равен &radic;&pi;/2 + С (я оптимист)</label><br>
+                    <input type="radio" id="q1_2" name="q1" value="2">
+                    <label for="q1_2">Выражается через слезы и неберущиеся спецфункции</label><br>
+                    <input type="radio" id="q1_3" name="q1" value="3">
+                    <label for="q1_3">Тут явно замешана квантовая магия, ответ: 42</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="q2">2. Задача на топологию. Опишите непрерывное гомеоморфное преобразование кружки кофе в бублик (донатс), если кофе горячий, а у вас лапки. (Кратко, формулами гомотопии):</label>
+                <textarea id="q2" name="q2" rows="3" placeholder="f(x, t) = ... где t — время остывания кофе"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>3. Найдите собственные значения &lambda; матрицы настроения капитана команды перед финалом ТЮФ:</label>
+                <div class="math-box">
+                    A = | &infin; &nbsp; -1 |<br>
+                    &nbsp; &nbsp; &nbsp; | &nbsp; 0 &nbsp; &nbsp; i |
+                </div>
+                <div class="radio-group">
+                    <input type="radio" id="q3_1" name="q3" value="1">
+                    <label for="q3_1">&lambda;<sub>1</sub> = ПАНИКА, &lambda;<sub>2</sub> = КОФЕ</label><br>
+                    <input type="radio" id="q3_2" name="q3" value="2">
+                    <label for="q3_2">&lambda; = &infin; (матрица вырождена, как и мои надежды выспаться)</label><br>
+                    <input type="radio" id="q3_3" name="q3" value="3">
+                    <label for="q3_3">Корней нет, матрица находится в суперпозиции</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="q4">4. Решите дифференциальное уравнение 10-го порядка, описывающее траекторию полета мысли физика, которому за 5 минут до доклада сказали, что его экспериментальная установка сгорела:</label>
+                <textarea id="q4" name="q4" rows="3" placeholder="d¹⁰y/dx¹⁰ + ... = крик о помощи"></textarea>
+            </div>
+
+            <div class="form-group">
+                <label>5. Какова вероятность того, что при случайном блуждании по бесконечной многомерной Римановой поверхности вы наткнетесь на здравый смысл?</label>
+                <select id="q5" name="q5">
+                    <option value="0">P = 0 (строго доказано теоремой Колмогорова)</option>
+                    <option value="limit">Стремится к нулю при бесконечном количестве выпитого энергетика</option>
+                    <option value="complex">Вероятность мнимая и лежит в комплексной плоскости</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- БЛОК 3: ТЮФовский бэкграунд -->
+        <fieldset>
+            <legend>Этап 3: Психологическая готовность</legend>
+            <div class="form-group">
+                <label for="experience">Умеете ли вы спорить с жюри с пеной у рта, доказывая, что трение воздуха в вашей комнате имеет отрицательный коэффициент?</label>
+                <select id="experience" name="experience">
+                    <option value="yes">Да, я мастер софистики и квантового блефа</option>
+                    <option value="learning">Я умею зрить в душу</option>
+                    <option value="pro">Я сам боюсь своего научного руководителя</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <button type="submit">Отправить анкету в небытие</button>
+    </form>
+</div>
+
+<div class="footer">
+    Турнир Юных Физиков 2026. Все права защищены законами термодинамики.
+</div>
+
+</body>
+</html>
